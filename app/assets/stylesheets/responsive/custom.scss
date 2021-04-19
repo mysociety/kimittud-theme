@@ -11,16 +11,16 @@
 /* General styling of nav menu items */
 %menu-item {
   text-decoration: none;
-  color: transparentize($color_white, 0.2);
+  color: transparentize($main_menu-link_text, 0.2);
   @include ie8 {
-    color: $color_white;
+    color: $main_menu-link_text;
   }
   transition: background-color 0.5s ease-out;
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($color_primary, 15%);
-    color: $color_white;
+    background-color: darken($main_menu-bg, 15%);
+    color: $main_menu-link_text;
   }
 
 }
@@ -28,12 +28,12 @@
 /* Selected menu item */
 %selected-menu-item {
   font-weight: bold;
-  color: $color_primary;
-  background-color: $color_neutral_light;
+  color: $main_menu-active_link_text;
+  background-color: $main_menu-active_link_bg;
   &:hover,
   &:active,
   &:focus {
-    background-color: $color_neutral_light;
+    background-color: $main_menu-active_link_bg;
   }
 }
 
@@ -97,12 +97,12 @@
 .sign_in_link,
 .sign_in_link:link,
 .sign_in_link:visited {
-  color: #fff;
+  color: $submenu-color;
   text-decoration: none;
   &:hover,
   &:active,
   &:focus {
-    color: #fff;
+    color: $submenu-color;
   }
 }
 
@@ -311,8 +311,10 @@ a.link_button_green_large {
 .navigation {
   border-bottom: none;
   a {
+    font-weight: bold;
+    text-transform: uppercase;
     @extend %menu-item;
-    color: transparentize($color_white, 0.2);
+    color: transparentize($main_menu-link_text, 0.2);
     @media( min-width: $main_menu-mobile_menu_cutoff ) {
       padding: 0.875em 1em;
     }
@@ -964,54 +966,15 @@ dt {
   }
 }
 
-#frontpage_splash {
-  background-color:#181216;
-  background-image: image-url('splash-bg.jpg');
-  background-position:top center;
-  background-repeat:no-repeat;
-  padding:40px 0;
-  max-height:500px;
-  .inner{
-    .left_column{
-      color:#fff;
-      font-size:22px;
-      line-height:1.4em;
-      blockquote{
-        margin-bottom:40px;
-        position:relative;
-        text-shadow:1px 1px 2px #222;
-        text-align:center;
-        a{
-          color:$button-bg;
-          text-decoration:none;
-          &:hover{
-            color:$heading-color;
-          }
-        }
-        &:before{
-          content:'"';
-          font-size:80px;
-          position:absolute;
-          margin-left:-40px;
-        }
-        &:after{
-          content:'"';
-          font-size:80px;
-          position:absolute;
-          right:0px;
-          bottom:-20px;
-          //margin:0 0px -40px 0;
-        }
-      }
-      #navigation_search_button{
-        width:25%;
-      }
-    }
-    .right_column{
-      iframe{
-        min-height:295px;
-      }
-    }
+.logged_in_bar {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    @include grid-column($columns:6);
+    padding-top: 1.8125em; //vertically centers it in the banner
   }
 
+  .js-loaded & {
+    @include respond-min( $main_menu-mobile_menu_cutoff ) {
+      position: relative;
+    }
+  }
 }
