@@ -1,4 +1,4 @@
-Alavetelitheme
+KiMitTud-Theme-2021
 ==============
 
 This is a "hello world" type theme package for Alaveteli.
@@ -24,7 +24,7 @@ You can then switch the theme the application is using:
 
 To run tests, in the Alaveteli Rails.root (with this theme installed):
 
-        bundle exec rspec lib/themes/alavetelitheme/spec
+        bundle exec rspec lib/themes/KiMitTud-Theme-2021/spec
 
 
 Copyright (c) 2011 mySociety, released under the MIT license
