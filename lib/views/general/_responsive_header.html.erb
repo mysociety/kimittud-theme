@@ -1,0 +1,39 @@
+<div class="only-show-for-print">
+  <p class="print-information">Printed from <%= request.original_url.force_encoding('utf-8') %> on <%= Time.zone.now.to_formatted_s(:long)  %></p>
+</div>
+<div id="banner" class="banner <%= @in_pro_area ? 'banner--pro' : '' %>" role="banner">
+  <div id="banner_inner" class="banner_inner">
+    <div id="banner_content" class="banner_content">
+      <div class="banner_site-title" id="logo_wrapper">
+        <%= link_to image_tag('logo.png'), frontpage_path, :id => 'logo' %>
+        <small>powered by <a href="http://atlatszo.hu" target="_blank">atlatszo.hu</a></small>
+      </div>
+
+      <div class="rsp_menu_button">
+        <a href="#banner" class="open"> <i class="icon-menu"></i> Menu </a>
+        <a href="#" class="close"> <i class="icon-menu"></i> Close </a>
+      </div>
+
+      <%= render :partial => 'general/locale_switcher' %>
+      <% if ! (controller.action_name == 'signin' or controller.action_name == 'signup' or controller.action_name == 'login') %>
+        <%= render partial: 'general/log_in_bar' %>
+      <% end %>
+      <%= render :partial => 'general/responsive_topnav' %>
+    </div>
+  </div>
+</div>
+
+<% if params[:action] == 'frontpage' %>
+  <div class="wrapper">
+    <div class="homepage-flash">
+      <% if flash[:notice] %>
+        <div id="notice"><%= render_flash(flash[:notice]) %></div>
+      <% end %>
+      <% if flash[:error] %>
+        <div id="error"><%= render_flash(flash[:error]) %></div>
+      <% end %>
+    </div>
+  </div>
+
+  <%= render :partial => "frontpage_hero" %>
+<% end %>
