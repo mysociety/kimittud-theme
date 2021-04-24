@@ -76,3 +76,7 @@ repos = paths.map do |path|
   FastGettext::TranslationRepository.build('app', :path => path, :type => :po)
 end
 AlaveteliLocalization.set_default_text_domain('app', repos)
+
+# Custom theme configuration
+
+EXTENSION_STATE_DAYS = 5
