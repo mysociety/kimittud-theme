@@ -1061,7 +1061,7 @@ msgid "Browse <a href='{{url}}'>other requests</a> to '{{public_body_name}}' for
 msgstr "Igénylése megfogalmazásához az adatgazdának küldött <a href='{{url}}'>többi kérelemből</a> is meríthet ötleteket."
 
 msgid "Browse all authorities &rarr;"
-msgstr ""
+msgstr "Az összes adatgazda böngészése... "
 
 msgid "Browse all requests &rarr;"
 msgstr ""
@@ -5037,7 +5037,11 @@ msgstr "A {{site_name}} új igénylést küld a(z) <strong>{{request_email}}</st
 msgid "{{site_name}} users have made {{number_of_requests}} request, including:"
 msgid_plural "{{site_name}} users have made {{number_of_requests}} requests, including:"
 msgstr[0] ""
+"A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel "
+"fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
 msgstr[1] ""
+"A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel "
+"fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
 
 msgid "{{title}} - a Freedom of Information request to {{public_body}}"
 msgstr "{{title}} - közérdekűadat-igénylés {{public_body}} részére"
@@ -5114,3 +5118,18 @@ msgstr "Közérdekű adatigénylés pár kattintással: a KiMitTud abban segít,
 
 msgid "create_new_request"
 msgstr "Új adatigénylés létrehozása"
+
+msgid "landing_main_sentence_secund_title"
+msgstr "Az információhoz való alkotmányos jog"
+
+msgid "landing_main_sentence_secund_desciption"
+msgstr "Minden állampolgárnak joga, hogy megismerje az állami, önkormányzati vagy más közfeladatot ellátó szerv, intézmény birtokában levő információkat. <strong>A jogszabályi előírásoknak megfelelően a közintézményeknek kötelező az adatigénylésekre választ adniuk.</strong>"
+
+msgid "landing_main_sentence_secund_desciption_link"
+msgstr "Bővebben a közérdekű adatok igényléséről ..."
+
+msgid "More successful requests..."
+msgstr "Tovább az eddigi igénylésekhez ... "
+
+msgid "More requests..."
+msgstr "Több igénylés..."
