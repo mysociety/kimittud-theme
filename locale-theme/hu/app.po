@@ -2091,7 +2091,7 @@ msgid "Make a request"
 msgstr "Új igénylés"
 
 msgid "Make a request &raquo;"
-msgstr ""
+msgstr "Máris kezdhetjük &raquo; "
 
 msgid "Make a request to these authorities"
 msgstr ""
@@ -2905,8 +2905,7 @@ msgstr ""
 
 msgid "Search over<br/><strong>{{number_of_requests}} requests</strong> <span>and</span><br/><strong>{{number_of_authorities}} authorities</strong>"
 msgstr ""
-"<br/>\n"
-"          <strong>{{number_of_requests}} adatigénylés</strong> <span>és</span><br/>\n"
+"          <strong>{{number_of_requests}} adatigénylés</strong> <span>és</span>"
 "          <strong>{{number_of_authorities}} adatgazda</strong> között böngészhet pillanatnyilag a rendszerünkben."
 
 msgid "Search queries"
@@ -5109,3 +5108,9 @@ msgstr ""
 
 msgid "« Back to search results"
 msgstr ""
+
+msgid "landing_main_derscription"
+msgstr "Közérdekű adatigénylés pár kattintással: a KiMitTud abban segít, hogy könnyen és átláthatóan lehessen közérdekű adatot igényelni minden olyan állami, önkormányzati vagy más közfeladatot ellátó intézménytől, amely az állam működtetésében részt vesz vagy közpénzt költ."
+
+msgid "create_new_request"
+msgstr "Új adatigénylés létrehozása"

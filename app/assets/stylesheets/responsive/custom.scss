@@ -885,16 +885,18 @@ dt {
 
 .homepage-hero {
   background-color: $color_neutral_dark;
-  background-image: image-url('homepage-background-small.jpg');
+  background-image: image-url('splash-bg.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top center;
   background-size: cover;
   color: $color_white;
-  padding: 2em 0 5em;
+  padding: 40px 0!important;
   position: relative;
+  max-height: 500px;
+  min-height: 375px;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 5em 0 8em;
-    background-image: image-url('homepage-background.jpg');
+    background-image: image-url('splash-bg.jpg');
   }
 
   a {
@@ -968,13 +970,172 @@ dt {
 
 .logged_in_bar {
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    @include grid-column($columns:6);
-    padding-top: 1.8125em; //vertically centers it in the banner
-  }
-
-  .js-loaded & {
-    @include respond-min( $main_menu-mobile_menu_cutoff ) {
-      position: relative;
+    width: 100%!important;
+    margin: 20px 0 34px 0 !important;
+    padding: 0 !important;
+    text-align: right;
+    a {
+      width: auto;
+      display: inline-block;
+      transition: background-color 0.5s ease-out;
+      &:hover {
+        background-color: $banner_bg;
+        color: $topnav_bg !important;
+      }
     }
   }
+}
+
+.navigation {
+  text-align: right;
+  li {
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      float: none;
+    }
+  }
+}
+
+.locale-list {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    display: none!important;
+  }
+}
+
+.topnav {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    background-color: transparent !important;
+    border: none!important;
+    box-shadow: none!important;
+  }
+}
+blockquote.landing_main_derscription {
+  margin: 22px 30px 40px 30px;
+  position: relative;
+  text-shadow: 1px 1px 2px #222;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.4em;
+  &:before {
+    content: '"';
+    font-size: 80px;
+    position: absolute;
+    margin-left: -40px;
+  }
+  &:after {
+    content: '"';
+    font-size: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+  }
+}
+
+.hero__intro {
+  @include grid-column(12);
+  @include respond-min($main_menu-mobile_menu_cutoff) {
+    @include grid-column(6);
+  }
+}
+
+.hero__new-search {
+  @include grid-column(12);
+  @include respond-min($main_menu-mobile_menu_cutoff) {
+    @include grid-column(6);
+  }
+}
+
+form input[type=submit], a.link_button_green, a.link_button_green_large,
+form input[type=submit]:focus, form input[type=submit]:hover, a.link_button_green:focus, a.link_button_green:hover, a.link_button_green_large:focus, a.link_button_green_large:hover{
+  border-bottom:none!important;
+  background-image: image-url('bg45.png')!important;
+  background-position:center center;
+}
+
+form input[type=submit], a.link_button_green, a.link_button_green_large {
+  font-weight: 400;
+  text-decoration: none;
+  color: $button-color;
+  background-color: darken($button-bg, 5%);
+  display: inline-block;
+  cursor: pointer;
+  /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
+  border-style: solid; border-color: darken($button-bg, 15%); border-width: 0 0 4px 0;
+  border-radius: 0;
+  padding: 3px 7px;
+  line-height: normal;
+  font-size: 1.1rem;
+  /* Same height as form elements */
+  height: 2.3125rem;
+  @include ie8 {
+     height: 2.3125em;
+     font-size: 1.1em;
+   }
+  vertical-align: top;
+  &:focus, &:hover{
+    text-decoration: none;
+    background-color: darken($button-bg, 10%);
+    border-bottom: 4px solid darken($button-bg, 20%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-family: $font-family;
+}
+
+.homepage-hero h1, .homepage-hero h2 {
+  font-weight: normal;
+}
+
+.front .inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.left_column {
+  width: 50%;
+  float: left;
+}
+.right_column {
+  width: 50%;
+  float: right;
+  margin-top: 0px;
+}
+.clear-both {
+  clear: both;
+}
+#frontpage_request {
+  background: #fff;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+  overflow: auto;
+  padding: 20px 0 40px 0;
+}
+#frontpage_request .left_column h1 {
+  font-size: 1.8em;
+  max-width: 100%;
+}
+
+a.link_button_green_large {
+  font-size: 2.2rem;
+  height: inherit;
+  padding: 0 10px;
+  @include ie8 {
+     font-size: 2.2em;
+     height: 66px;
+   }
+   @include lte-ie7 {
+     height: 50px;
+   }
+}
+
+#frontpage_request .left_column {
+  text-align: center;
+}
+
+#frontpage_request .left_column .link_button_green_large {
+    padding: 10px 30px;
 }

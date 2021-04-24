@@ -8,17 +8,23 @@
         <%= link_to image_tag('logo.png'), frontpage_path, :id => 'logo' %>
         <small>powered by <a href="http://atlatszo.hu" target="_blank">atlatszo.hu</a></small>
       </div>
+      <div style="width: 75%; float: left;">
+        <div>
+          <div class="rsp_menu_button">
+            <a href="#banner" class="open"> <i class="icon-menu"></i> Menu </a>
+            <a href="#" class="close"> <i class="icon-menu"></i> Close </a>
+          </div>
 
-      <div class="rsp_menu_button">
-        <a href="#banner" class="open"> <i class="icon-menu"></i> Menu </a>
-        <a href="#" class="close"> <i class="icon-menu"></i> Close </a>
+          <%= render :partial => 'general/locale_switcher' %>
+          <% if ! (controller.action_name == 'signin' or controller.action_name == 'signup' or controller.action_name == 'login') %>
+            <%= render partial: 'general/log_in_bar' %>
+          <% end %>
+          <div style="clear: both;"></div>
+        </div>
+        <div>
+          <%= render :partial => 'general/responsive_topnav' %>
+        </div>
       </div>
-
-      <%= render :partial => 'general/locale_switcher' %>
-      <% if ! (controller.action_name == 'signin' or controller.action_name == 'signup' or controller.action_name == 'login') %>
-        <%= render partial: 'general/log_in_bar' %>
-      <% end %>
-      <%= render :partial => 'general/responsive_topnav' %>
     </div>
   </div>
 </div>
@@ -36,4 +42,5 @@
   </div>
 
   <%= render :partial => "frontpage_hero" %>
+  <%= render :partial => "frontpage_request" %>
 <% end %>
