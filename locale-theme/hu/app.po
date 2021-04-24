@@ -5133,3 +5133,12 @@ msgstr "Tovább az eddigi igénylésekhez ... "
 
 msgid "More requests..."
 msgstr "Több igénylés..."
+
+msgid "Supported by <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a>"
+msgstr "Elindítását az <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a> támogatta"
+
+msgid "Check and share"
+msgstr "Nevezd meg! - Így add tovább! CC BY-SA 2.5"
+
+msgid "Contact {{site_name}}"
+msgstr "Kapcsolatfelvétel a {{site_name}} üzemeltetőjével"

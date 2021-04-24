@@ -578,14 +578,16 @@ p.locale-list-trigger {
 /* Footer */
 #footer {
   background-color: $color_neutral_dark;
-  color: darken($color_neutral_light, 10%);
+  color: $footer_color;
+  padding: 2em 4em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   a {
     text-decoration: none;
-    color: $color_white;
+    color: $footer_link_color;
     &:hover,
     &:active,
     &:focus {
-      color: lighten($color_primary, 10%);
+      color: lighten($footer_link_color, 10%);
       text-decoration: underline;
     }
   }
@@ -1186,4 +1188,84 @@ a.link_button_green_large {
       @include grid-column($columns:12);
     }
   }
+}
+
+/* Footer */
+#footer {
+
+  ul li {
+    list-style: none outside none;
+    padding: 1em 0 0 0 ;
+    text-align: bottom;
+  }
+  .social{
+    li{
+      a{
+        background:$heading-color;
+        padding:4px;
+        display:inline-block;
+        padding:5px 10px;
+        &#logo{
+          background:transparent none;
+        }
+      }
+    }
+  }
+}
+
+#footer-nav{
+
+  @include grid-row();
+  @include ie8{
+    width: $main_menu-mobile_menu_cutoff;
+  }
+  img {
+    display: none;
+  }
+
+  ul{
+    padding: 0;
+    list-style: none outside none;
+    li {
+      display: block;
+      float: left;
+      height: auto;
+      padding: 1em 0 0 0;
+      width: 25%;
+      text-align: center;
+    }
+  }
+
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+
+    @include ie8{
+      #footer-nav ul > li:nth-child(4n+1) {
+        padding-left: 0em;
+        padding-right: 1.40625em;
+      }
+      #footer-nav ul > li:nth-child(4n+2) {
+        padding-left: 0.46875rem;
+        padding-right: 0.9375rem;
+      }
+      #footer-nav ul > li:nth-child(4n+3) {
+        padding-left: 0.9375em;
+        padding-right: 0.46875em;
+      }
+      #footer-nav ul > li:nth-child(4n) {
+        padding-left: 1.40625em;
+        padding-right: 0em;
+      }
+    }
+
+    img {
+      display: inherit;
+      @include lte-ie7 {
+        display: block;
+      }
+    }
+
+  }
+}
+.footer-last-wrapper{
+  text-align: center;
 }
