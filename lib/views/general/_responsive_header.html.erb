@@ -8,7 +8,7 @@
         <%= link_to image_tag('logo.png'), frontpage_path, :id => 'logo' %>
         <small>powered by <a href="http://atlatszo.hu" target="_blank">atlatszo.hu</a></small>
       </div>
-      <div style="width: 75%; float: left;">
+      <div class="core-menu-items">
         <div>
           <div class="rsp_menu_button">
             <a href="#banner" class="open"> <i class="icon-menu"></i> Menu </a>
@@ -19,7 +19,7 @@
           <% if ! (controller.action_name == 'signin' or controller.action_name == 'signup' or controller.action_name == 'login') %>
             <%= render partial: 'general/log_in_bar' %>
           <% end %>
-          <div style="clear: both;"></div>
+          <div class="clear-both"></div>
         </div>
         <div>
           <%= render :partial => 'general/responsive_topnav' %>
