@@ -1137,8 +1137,10 @@ a.link_button_green_large {
     padding: 10px 30px;
 }
 
-#wrapper {
-  max-width: 71.25em!important;
+.front {
+  #wrapper {
+    max-width: 71.25em!important;
+  }
 }
 
 #frontpage_examples{
@@ -1280,6 +1282,12 @@ a.link_button_green_large {
 .core-menu-items {
   width: 75%;
   float: left;
+}
+
+@media (min-width: 58em) {
+  #select_authority_help {
+    display: block;
+  }
 }
 
 @media (max-width: 927px) {
