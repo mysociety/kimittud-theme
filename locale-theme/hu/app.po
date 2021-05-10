@@ -2735,8 +2735,11 @@ msgstr ""
 msgid "Rejected"
 msgstr ""
 
-msgid "Remember me (keeps you signed in longer; do not use on a public computer)"
+msgid ""
+"Remember me (keeps you signed in longer; do not use on a public computer)"
 msgstr ""
+"Jegyezz meg</label> (tovább tud bejelentkezve maradni;\n"
+"    ne használja mások által is használt számítógépen)"
 
 msgid "Report"
 msgstr ""

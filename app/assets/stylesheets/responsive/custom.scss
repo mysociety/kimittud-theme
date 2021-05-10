@@ -1343,3 +1343,55 @@ a.link_button_green_large {
     margin-top: 20px;
   }
 }
+
+h1, #sign_in_reason, #superuser_message {
+  font-size: 2.5em;
+}
+
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+#left_half {
+  @include grid-column(12);
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    @include grid-column($columns:5,$float:left);
+    @include ie8{
+      padding-right: 0.9375em;
+    }
+    @include lte-ie7 {
+      width: 22.313em;
+    }
+  }
+}
+
+#right_half {
+  @include grid-column(12);
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    @include grid-column($columns:5,$float:right);
+    @include ie8{
+      padding-left: 0.9375em;
+    }
+    @include lte-ie7 {
+      width: 22.313em;
+    }
+  }
+}
