@@ -1395,3 +1395,18 @@ p {
     }
   }
 }
+
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=url] {
+  font-size:1.1em;
+  width:100%;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  border-color:#BBB;
+  border-style:solid;
+  border-width:1px;
+  padding:5px;
+  display: inline-block;
+}

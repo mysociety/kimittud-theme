@@ -1124,7 +1124,7 @@ msgid "Change your password"
 msgstr "Jelszavam módosítása "
 
 msgid "Change your password on {{site_name}}"
-msgstr "{{site_name}} jelszó módosítása"
+msgstr "{{site_name}} oldalon használt jelszó módosítása"
 
 msgid "Check for mistakes if you typed or copied the address."
 msgstr "Ha beírta vagy másolta a címet, ellenőrizze, hogy helyes-e. "
