@@ -5145,3 +5145,48 @@ msgstr "Nevezd meg! - Így add tovább! CC BY-SA 2.5"
 
 msgid "Contact {{site_name}}"
 msgstr "Kapcsolatfelvétel a {{site_name}} üzemeltetőjével"
+
+msgid "help_about"
+msgstr "Mi ez?"
+
+msgid "help_requesting"
+msgstr "Adatigénylés menete"
+
+msgid "help_privacy"
+msgstr "Adatvédelmi kérdések"
+
+msgid "help_officers"
+msgstr "Adatigénylésre válaszoló munkatársaknak"
+
+msgid "help_api"
+msgstr "Az API-ról"
+
+msgid "advanced_search"
+msgstr "Keresés"
+
+msgid "help_pro"
+msgstr "Pro"
+
+msgid "discussion"
+msgstr "Témák"
+
+msgid "contact_title"
+msgstr "Kapcsolat"
+
+msgid "contact_desc"
+msgstr "Ha kérdésére itt a súgótémák között nem talált választ, vagy valamit közölni szeretne velünk a weboldallal kapcsolatosan, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>."
+
+msgid "Making requests"
+msgstr "Az adatigénylés menete"
+
+msgid "about_introduction"
+msgstr "Mi ez?"
+
+msgid "Your privacy"
+msgstr "Adatvédelmi kérdések"
+
+msgid "FOI officer questions"
+msgstr "Adatigénylésre válaszoló munkatársaknak"
+
+msgid "About our API"
+msgstr "Az API"

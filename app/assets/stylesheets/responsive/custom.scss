@@ -782,6 +782,7 @@ a.link_to_this {
 /* Help pages */
 
 dt {
+  color: $heading-color;
   font-weight: 700;
   @include respond-min( $main_menu-mobile_menu_cutoff ){
     font-size: 2em;
@@ -1409,4 +1410,35 @@ form input[type=url] {
   border-width:1px;
   padding:5px;
   display: inline-block;
+}
+
+#right_column_flip, #right_column {
+  @include grid-column(12);
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    @include grid-column($columns:3);
+    margin-top:20px;
+    @include lte-ie7 {
+      width: 12.625em;
+    }
+  }
+}
+
+dd {
+  margin-left: 2em;
+}
+
+dt + dd {
+  margin-top: 0.5em;
+  > p {
+    margin-top: 0;
+  }
+}
+
+a {
+  color: #2688dc;
+  &:hover,
+  &:active,
+  &:focus {
+      color: #333333;
+  }
 }
