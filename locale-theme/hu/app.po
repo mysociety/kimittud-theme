@@ -990,13 +990,13 @@ msgid "Ask for <strong>specific</strong> documents or information, this site is 
 msgstr "Kérése irányulhat <strong>konkrét</strong> dokumentumokra vagy információkra, de az oldal általános tudakozódásra nem alkalmas. "
 
 msgid "Ask us to add an authority"
-msgstr ""
+msgstr "Írjon nekünk, ha nem talál egy adatgazdát!"
 
 msgid "Ask us to update FOI email"
-msgstr ""
+msgstr "Írjon nekünk, ha az adatgazda e-mailcíme megváltozott"
 
 msgid "Ask us to update the email address for {{public_body_name}}"
-msgstr ""
+msgstr "Írjon nekünk, ha a(z) {{public_body_name}} e-mailcíme megváltozott"
 
 msgid "At the bottom of this page, write a reply to them trying to persuade them to scan it in (<a href=\"{{url}}\">more details</a>)."
 msgstr ""
@@ -1010,13 +1010,13 @@ msgid "Attachment:"
 msgstr "Melléklet: "
 
 msgid "Authority email:"
-msgstr ""
+msgstr "Adatgazda e-mailcíme"
 
 msgid "Authority name"
 msgstr ""
 
 msgid "Authority:"
-msgstr ""
+msgstr "Adatgazda"
 
 msgid "Awaiting clarification"
 msgstr ""
@@ -2261,7 +2261,7 @@ msgid "Note that we may still send you emails when new correspondence appears on
 msgstr ""
 
 msgid "Notes:"
-msgstr ""
+msgstr "Megjegyzések:"
 
 msgid "Now check your email!"
 msgstr "Kérjük, ellenőrizze postafiókját! "
@@ -3078,10 +3078,10 @@ msgid "Source URL is too long"
 msgstr ""
 
 msgid "Source URL:"
-msgstr ""
+msgstr "Forrás URL:"
 
 msgid "Source:"
-msgstr ""
+msgstr "Forrás:"
 
 msgid "Spreadsheets"
 msgstr ""
@@ -3123,7 +3123,7 @@ msgid "Submit data"
 msgstr ""
 
 msgid "Submit request"
-msgstr ""
+msgstr "Kérelem benyújtása"
 
 msgid "Submit status"
 msgstr "Az igénylés státuszának beállítása "
