@@ -352,6 +352,7 @@ a.link_button_green_large {
   font-size: 1em;
   margin:1em 0;
   padding: 1.5em;
+  border-radius: 0;
 
   p:first-child {
     margin-top: 0;
@@ -372,7 +373,7 @@ a.link_button_green_large {
 }
 
 #error, .errorExplanation, #hidden_request, .warning {
-  background-color: desaturate(lighten($error-color, 30%),10%);
+  background-color: $error-bg;
   border-color: $error-color;
 
 }

@@ -15,7 +15,7 @@ $color_orange: #f4a140;
 $color_blue: #4faded;
 $color_green: #62b356;
 $color_yellow: #ffd836;
-$color_red: #e04b4b;
+$color_red: #a1432c;
 $color_violet: #a94ca6;
 $color_purple: #5c377f;
 $color_white: #ffffff;
@@ -40,12 +40,13 @@ $form-label-font-color: $color_black;
 // $button-bg: darken($color_green, 10%);
 // $button-color: $color_white;
 
-$status-success: darken($color_green, 18%);
-$status-failure: darken($color_red, 10%);
-$status-pending: darken($color_orange, 28%);
+$status-success: #aab26e;
+$status-failure: #ff7959;
+$status-pending: #e69e5d;
 
 $notice-color: $color_green;
 $error-color: $color_red;
+$error-bg: #ebc3a9;
 $action-color: $color_orange;
 
 // $banner_inner_bg: $color_primary;
