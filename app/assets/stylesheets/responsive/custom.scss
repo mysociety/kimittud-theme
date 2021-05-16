@@ -1290,6 +1290,16 @@ a.link_button_green_large {
     display: block;
   }
 }
+.new-search_content {
+  #search_form {
+    #query {
+      width: 73%!important;
+    }
+    #new_search_submit {
+      width: 23%;
+    }
+  }
+}
 
 @media (max-width: 927px) {
   #frontpage_request h1 {
@@ -1309,12 +1319,6 @@ a.link_button_green_large {
     #search_form {
       div {
         text-align: center;
-      }
-      #query {
-        width: 73%;
-      }
-      #new_search_submit {
-        width: 23%;
       }
     }
   }
@@ -1441,4 +1445,8 @@ a {
   &:focus {
       color: #333333;
   }
+}
+
+textarea[rows] {
+  width: 100%;
 }

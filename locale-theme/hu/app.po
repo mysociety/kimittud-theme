@@ -140,7 +140,7 @@ msgid "(hide)"
 msgstr ""
 
 msgid "(or <a href=\"{{url}}\">sign in</a>)"
-msgstr ""
+msgstr "(vagy <a href=\"{{url}}\">bejelentkezés</a>)"
 
 msgid "(show)"
 msgstr ""
@@ -2957,7 +2957,7 @@ msgid "Send message to {{user_name}} just to see how it works"
 msgstr "Üzenet küldése a következőnek: {{user_name}} Csak hogy megnézzük, hogyan működik "
 
 msgid "Sending..."
-msgstr ""
+msgstr "Küldés..."
 
 msgid "Sent to one authority by {{info_request_user}} on {{date}}."
 msgid_plural "Sent to {{authority_count}} authorities by {{info_request_user}} on {{date}}."
@@ -4502,7 +4502,7 @@ msgid "Your email doesn't look like a valid address"
 msgstr ""
 
 msgid "Your email:"
-msgstr ""
+msgstr "Email:"
 
 msgid "Your follow up has not been sent because this request has been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you really want to send a follow up message."
 msgstr "Nyomon követési üzenete nem lett továbbítva, mert az igénylést a levélszemét megakadályozása érdekében leállították. <a href=\"{{url}}\">Lépjen velünk kapcsolatba</a>, ha tényleg szeretne nyomon követési üzenetet küldeni. "
@@ -4540,7 +4540,7 @@ msgstr ""
 "       <a href=\"{{url}}\">Részletek itt.</a>"
 
 msgid "Your name:"
-msgstr "Neve: "
+msgstr "Név: "
 
 msgid "Your password has been changed."
 msgstr "Jelszava módosult. "
@@ -5190,3 +5190,39 @@ msgstr "Adatigénylésre válaszoló munkatársaknak"
 
 msgid "About our API"
 msgstr "Az API"
+
+msgid "Contact us"
+msgstr "Kapcsolatfelvétel"
+
+msgid "Contact an authority to get official information"
+msgstr "Közérdekű adatot szeretne megismerni?"
+
+msgid "<a href=\"{{url}}\">Go here</a> to make a request, in public, for information from public authorities."
+msgstr "<a href=\"{{url}}\">Kattintson ide</a>, ha valamely állami, önkormányzati vagy más közfeladatot ellátó szervétől, intézményétől szeretne nyilvánosan adatot igényelni."
+
+msgid "Asking for private information about yourself? Please read our <a href=\"{{url}}\">help page</a>."
+msgstr "Saját magáról kérne információt? Olvasson erről a <a href=\"{{url}}\">súgóban!</a>"
+
+msgid "Contact the {{site_name}} team"
+msgstr "Kapcsolatfelvétel a {{site_name}} weboldal munkatársaival"
+
+msgid "Please read the  <a href=\"{{url}}\">help page</a> first, as it may answer your question quicker."
+msgstr "Kérjük, először olvassa végig a <a href=\"{{url}}\">súgó témákat</a>, mivel előfordulhat, hogy kérdésére ott azonnal választ talál."
+
+msgid "We'd love to hear how you've found using this site. Either fill in this form."
+msgstr "Szeretnénk, ha megírná weboldalunk használatával kapcsolatos tapasztalatait. Ezenkívül, ha bármilyen kérdése van vagy tanácsra van szüksége a KiMitTud weboldal használatával kapcsolatban, csak töltse ki az alábbi űrlapot, és igyekszünk mielőbb válaszolni."
+
+msgid "We are a <strong>charity</strong> and not part of the Government."
+msgstr "Ezt a weboldalt az <a href=\"http://www.atlatszo.hu/impresszum/\">atlatszo.hu</a> üzemelteti."
+
+msgid "Message to website:"
+msgstr "Üzenet:"
+
+msgid "Include link to request:"
+msgstr "Adja hozzá az üzenethez az alábbi adatigénylés linkjét:"
+
+msgid "Include link to authority:"
+msgstr "Adja hozzá az üzenethez az alábbi adatgazda linkjét:"
+
+msgid "Send message to the charity"
+msgstr "Üzenet küldése"
