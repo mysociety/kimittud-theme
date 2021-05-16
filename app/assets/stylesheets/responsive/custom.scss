@@ -1450,3 +1450,15 @@ a {
 textarea[rows] {
   width: 100%;
 }
+
+#left_column_flip.left_column_flip--opposite {
+  // This is an aggressive selector, but it's better than !important.
+  // When we refactor the Sass to no longer use IDs this can be refactored too
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    float: left;
+  }
+}
+
+#public_body_query {
+  width: 200px;
+}

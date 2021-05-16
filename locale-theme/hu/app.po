@@ -966,7 +966,7 @@ msgid "ApplicationRecord|Within rfc822 subject"
 msgstr ""
 
 msgid "Are we missing a public authority?"
-msgstr ""
+msgstr "Nem talál egy adatgazdát?"
 
 msgid "Are you asking about your, or others', personal information or personal situation?"
 msgstr ""
@@ -2067,7 +2067,9 @@ msgid "Link to this"
 msgstr "Hivatkozása ide "
 
 msgid "List of all authorities (CSV)"
-msgstr "Az rendszerünkben található adatgazdák listája (CSV) "
+msgstr ""
+"Az rendszerünkben található adatgazdák listája (CSV) \n"
+"A KiMitTud-ban található adatgazdák letölthető listája (CSV) "
 
 msgid "Log in to download a zip file of {{info_request_title}}"
 msgstr "Jelentkezzen be, hogy a {{info_request_title}} tárgyú adatigénylési zip-fájlként letölthesse"
