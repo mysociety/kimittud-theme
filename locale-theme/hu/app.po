@@ -1013,7 +1013,7 @@ msgid "Authority email:"
 msgstr "Adatgazda e-mailcíme"
 
 msgid "Authority name"
-msgstr ""
+msgstr "Adatgazda neve"
 
 msgid "Authority:"
 msgstr "Adatgazda"
@@ -5228,3 +5228,6 @@ msgstr "Adja hozzá az üzenethez az alábbi adatgazda linkjét:"
 
 msgid "Send message to the charity"
 msgstr "Üzenet küldése"
+
+msgid "Currently <strong>extension</strong> state ..."
+msgstr "Jelenleg kiterjesztett állapotban van..."
