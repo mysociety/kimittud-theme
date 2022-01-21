@@ -188,6 +188,9 @@ msgstr ""
 "<strong>Adatvédelmi nyilatkozat:</strong> Amennyiben önmagáról kíván személyes\n"
 "    jellegű információt igényelni, <a href=\"{{url}}\">kattintson ide</a>. "
 
+msgid "<a href=\"{{url}}\">Go here</a> to make a request, in public, for information from public authorities."
+msgstr "<a href=\"{{url}}\">Kattintson ide</a>, ha valamely állami, önkormányzati vagy más közfeladatot ellátó szervétől, intézményétől szeretne nyilvánosan adatot igényelni."
+
 msgid "<a href=\"{{url}}\">Keep it <strong>focused</strong></a>, you'll be more likely to get what you want."
 msgstr "Fogalmazzon <strong>lényegre törően</strong>, hogy biztosan azt kapja, amire szüksége van! (<a href=\"{{url}}\">...Miért?</a>)"
 
@@ -387,6 +390,9 @@ msgstr "{{site_name}} felhasználó "
 
 msgid "API"
 msgstr ""
+
+msgid "About our API"
+msgstr "Az API"
 
 msgid "About you:"
 msgstr "Magamról: "
@@ -998,6 +1004,9 @@ msgstr "Írjon nekünk, ha az adatgazda e-mailcíme megváltozott"
 msgid "Ask us to update the email address for {{public_body_name}}"
 msgstr "Írjon nekünk, ha a(z) {{public_body_name}} e-mailcíme megváltozott"
 
+msgid "Asking for private information about yourself? Please read our <a href=\"{{url}}\">help page</a>."
+msgstr "Saját magáról kérne információt? Olvasson erről a <a href=\"{{url}}\">súgóban!</a>"
+
 msgid "At the bottom of this page, write a reply to them trying to persuade them to scan it in (<a href=\"{{url}}\">more details</a>)."
 msgstr ""
 "Az oldal alsó részén írjon választ, amiben kéri a dokumentum szkennelését\n"
@@ -1126,6 +1135,9 @@ msgstr "Jelszavam módosítása "
 msgid "Change your password on {{site_name}}"
 msgstr "{{site_name}} oldalon használt jelszó módosítása"
 
+msgid "Check and share"
+msgstr "Nevezd meg! - Így add tovább! CC BY-SA 2.5"
+
 msgid "Check for mistakes if you typed or copied the address."
 msgstr "Ha beírta vagy másolta a címet, ellenőrizze, hogy helyes-e. "
 
@@ -1227,11 +1239,20 @@ msgstr ""
 msgid "Considered by administrators as vexatious."
 msgstr ""
 
+msgid "Contact an authority to get official information"
+msgstr "Közérdekű adatot szeretne megismerni?"
+
+msgid "Contact the {{site_name}} team"
+msgstr "Kapcsolatfelvétel a {{site_name}} weboldal munkatársaival"
+
 msgid "Contact us"
-msgstr ""
+msgstr "Kapcsolatfelvétel"
 
 msgid "Contact {{recipient}}"
 msgstr "Kapcsolatfelvétel a(z) {{recipient}} képviselőjével"
+
+msgid "Contact {{site_name}}"
+msgstr "Kapcsolatfelvétel a {{site_name}} üzemeltetőjével"
 
 msgid "Contains defamatory material"
 msgstr ""
@@ -1279,6 +1300,9 @@ msgid "Cultural sites and built structures (as they may be affected by the envir
 msgstr ""
 "Kulturális értéket képviselő helyek és építmények (amelyeket érinthetnek a\n"
 "            fentiekben felsorolt környezeti tényezők) "
+
+msgid "Currently <strong>extension</strong> state ..."
+msgstr "Jelenleg kiterjesztett állapotban van..."
 
 msgid "Currently <strong>waiting for a response</strong> from {{public_body_link}}, they should respond promptly and"
 msgstr ""
@@ -1452,6 +1476,9 @@ msgstr "{{public_body}} közérdekű adatok igényléséhez használt e-mail cí
 
 msgid "FOI law does not apply to this authority."
 msgstr ""
+
+msgid "FOI officer questions"
+msgstr "Adatigénylésre válaszoló munkatársaknak"
 
 msgid "FOI requests"
 msgstr "Közérdekűadat-igénylések "
@@ -1952,6 +1979,12 @@ msgstr ""
 msgid "In the News"
 msgstr ""
 
+msgid "Include link to authority:"
+msgstr "Adja hozzá az üzenethez az alábbi adatgazda linkjét:"
+
+msgid "Include link to request:"
+msgstr "Adja hozzá az üzenethez az alábbi adatigénylés linkjét:"
+
 msgid "Include relevant links, such as to a campaign page, your blog or a twitter account. They will be made clickable. e.g."
 msgstr ""
 "Helyezzen el blogjára, honlapjára, twitter-, facebook fiókjára mutató hivatkozásokat. A linkeket kattinthatóvá tesszük. \n"
@@ -2113,6 +2146,9 @@ msgstr "Közérdekűadat-igénylések létrehozása és böngészése "
 msgid "Make sure the information you are asking for is not already publicly available."
 msgstr ""
 
+msgid "Making requests"
+msgstr "Az adatigénylés menete"
+
 msgid "Many requests"
 msgstr "Sok igénylés"
 
@@ -2124,6 +2160,9 @@ msgstr ""
 
 msgid "Message sent using {{site_name}} contact form, "
 msgstr "Üzenet elküldve a {{site_name}} kapcsolatfelvételi űrlapján, "
+
+msgid "Message to website:"
+msgstr "Üzenet:"
 
 msgid "Message {{current_message}} of {{total_messages}}"
 msgstr ""
@@ -2137,8 +2176,14 @@ msgstr "További információ erről az adatgazdáról"
 msgid "More requests in this batch"
 msgstr ""
 
+msgid "More requests..."
+msgstr "Több igénylés..."
+
 msgid "More similar requests"
 msgstr "Több hasonló igénylés "
+
+msgid "More successful requests..."
+msgstr "Tovább az eddigi igénylésekhez ... "
 
 msgid "Most frequent annotators"
 msgstr ""
@@ -2520,6 +2565,9 @@ msgstr ""
 msgid "Please pass this on to the person who conducts Freedom of Information reviews."
 msgstr ""
 
+msgid "Please read the  <a href=\"{{url}}\">help page</a> first, as it may answer your question quicker."
+msgstr "Kérjük, először olvassa végig a <a href=\"{{url}}\">súgó témákat</a>, mivel előfordulhat, hogy kérdésére ott azonnal választ talál."
+
 msgid "Please read the recent response and <strong>update the status</strong> so we know whether it contains useful information."
 msgid_plural "Please read the recent responses and <strong>update the status</strong> so we know whether they contain useful information."
 msgstr[0] ""
@@ -2737,8 +2785,7 @@ msgstr ""
 msgid "Rejected"
 msgstr ""
 
-msgid ""
-"Remember me (keeps you signed in longer; do not use on a public computer)"
+msgid "Remember me (keeps you signed in longer; do not use on a public computer)"
 msgstr ""
 "Jegyezz meg</label> (tovább tud bejelentkezve maradni;\n"
 "    ne használja mások által is használt számítógépen)"
@@ -2909,9 +2956,7 @@ msgid "Search in their website for this information &rarr;"
 msgstr ""
 
 msgid "Search over<br/><strong>{{number_of_requests}} requests</strong> <span>and</span><br/><strong>{{number_of_authorities}} authorities</strong>"
-msgstr ""
-"          <strong>{{number_of_requests}} adatigénylés</strong> <span>és</span>"
-"          <strong>{{number_of_authorities}} adatgazda</strong> között böngészhet pillanatnyilag a rendszerünkben."
+msgstr "          <strong>{{number_of_requests}} adatigénylés</strong> <span>és</span>          <strong>{{number_of_authorities}} adatgazda</strong> között böngészhet pillanatnyilag a rendszerünkben."
 
 msgid "Search queries"
 msgstr "Keresési lekérdezések"
@@ -2951,6 +2996,9 @@ msgstr ""
 
 msgid "Send message"
 msgstr "Üzenet küldése "
+
+msgid "Send message to the charity"
+msgstr "Üzenet küldése"
 
 msgid "Send message to {{user_name}}"
 msgstr "Üzenet küldése a következőnek: {{user_name}}"
@@ -3175,6 +3223,9 @@ msgstr ""
 
 msgid "Summary is too short. Please be a little more descriptive about the information you are asking for."
 msgstr ""
+
+msgid "Supported by <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a>"
+msgstr "Elindítását az <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a> támogatta"
 
 msgid "Suspended users cannot edit their profile"
 msgstr ""
@@ -4029,6 +4080,9 @@ msgstr "Az adatgazda válaszára várakozik "
 msgid "Want to know something?"
 msgstr ""
 
+msgid "We are a <strong>charity</strong> and not part of the Government."
+msgstr "Ezt a weboldalt az <a href=\"http://www.atlatszo.hu/impresszum/\">atlatszo.hu</a> üzemelteti."
+
 msgid "We consider it is not a valid FOI request as it was correspondence about your personal circumstances, and we have therefore hidden it from other users."
 msgstr ""
 
@@ -4083,6 +4137,9 @@ msgid "We will not reveal your email addresses to anybody unless you or the law 
 msgstr ""
 "E-mail címeit senkinek sem adjuk ki - kivéve, ha azt ön kéri\n"
 "vagy jogszabály előírja. "
+
+msgid "We'd love to hear how you've found using this site. Either fill in this form."
+msgstr "Szeretnénk, ha megírná weboldalunk használatával kapcsolatos tapasztalatait. Ezenkívül, ha bármilyen kérdése van vagy tanácsra van szüksége a KiMitTud weboldal használatával kapcsolatban, csak töltse ki az alábbi űrlapot, és igyekszünk mielőbb válaszolni."
 
 msgid "We'll drop you an email as soon as your request gets a response."
 msgstr ""
@@ -4556,6 +4613,9 @@ msgstr "Az ön jelszava: "
 msgid "Your photo will be shown in public <strong>on the Internet</strong>, wherever you do something on {{site_name}}."
 msgstr "Profilképe az <strong>interneten</strong> nyilvánosan megjelenik, ha a {{site_name}} weboldalon valamilyen műveletet hajt végre."
 
+msgid "Your privacy"
+msgstr "Adatvédelmi kérdések"
+
 msgid "Your request"
 msgstr ""
 
@@ -4646,8 +4706,14 @@ msgstr ""
 msgid "[{{site_name}} contact email]"
 msgstr ""
 
+msgid "about_introduction"
+msgstr "Mi ez?"
+
 msgid "admin"
 msgstr "admin"
+
+msgid "advanced_search"
+msgstr "Keresés"
 
 msgid "all requests"
 msgstr " minden igénylés "
@@ -4697,11 +4763,23 @@ msgstr "megjegyzések"
 msgid "complete"
 msgstr ""
 
+msgid "contact_desc"
+msgstr "Ha kérdésére itt a súgótémák között nem talált választ, vagy valamit közölni szeretne velünk a weboldallal kapcsolatosan, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>."
+
+msgid "contact_title"
+msgstr "Kapcsolat"
+
+msgid "create_new_request"
+msgstr "Új adatigénylés létrehozása"
+
 msgid "delivered"
 msgstr ""
 
 msgid "details"
 msgstr "részletek"
+
+msgid "discussion"
+msgstr "Témák"
 
 msgid "display_status only works for incoming and outgoing messages right now"
 msgstr "display_status csak az éppen most beérkező és kimenő üzenetek esetében működik "
@@ -4727,6 +4805,24 @@ msgstr ""
 msgid "have delayed."
 msgstr "késedelmes. "
 
+msgid "help_about"
+msgstr "Mi ez?"
+
+msgid "help_api"
+msgstr "Az API-ról"
+
+msgid "help_officers"
+msgstr "Adatigénylésre válaszoló munkatársaknak"
+
+msgid "help_privacy"
+msgstr "Adatvédelmi kérdések"
+
+msgid "help_pro"
+msgstr "Pro"
+
+msgid "help_requesting"
+msgstr "Adatigénylés menete"
+
 msgid "hide quoted sections"
 msgstr "idézett részek elrejtése"
 
@@ -4735,6 +4831,18 @@ msgstr "belső hiba "
 
 msgid "internal reviews"
 msgstr "belső felülvizsgálatok "
+
+msgid "landing_main_derscription"
+msgstr "Közérdekű adatigénylés pár kattintással: a KiMitTud abban segít, hogy könnyen és átláthatóan lehessen közérdekű adatot igényelni minden olyan állami, önkormányzati vagy más közfeladatot ellátó intézménytől, amely az állam működtetésében részt vesz vagy közpénzt költ."
+
+msgid "landing_main_sentence_secund_desciption"
+msgstr "Minden állampolgárnak joga, hogy megismerje az állami, önkormányzati vagy más közfeladatot ellátó szerv, intézmény birtokában levő információkat. <strong>A jogszabályi előírásoknak megfelelően a közintézményeknek kötelező az adatigénylésekre választ adniuk.</strong>"
+
+msgid "landing_main_sentence_secund_desciption_link"
+msgstr "Bővebben a közérdekű adatok igényléséről ..."
+
+msgid "landing_main_sentence_secund_title"
+msgstr "Az információhoz való alkotmányos jog"
 
 msgid "logged in as user {{user_name}}"
 msgstr ""
@@ -5041,12 +5149,8 @@ msgstr "A {{site_name}} új igénylést küld a(z) <strong>{{request_email}}</st
 
 msgid "{{site_name}} users have made {{number_of_requests}} request, including:"
 msgid_plural "{{site_name}} users have made {{number_of_requests}} requests, including:"
-msgstr[0] ""
-"A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel "
-"fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
-msgstr[1] ""
-"A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel "
-"fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
+msgstr[0] "A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
+msgstr[1] "A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
 
 msgid "{{title}} - a Freedom of Information request to {{public_body}}"
 msgstr "{{title}} - közérdekűadat-igénylés {{public_body}} részére"
@@ -5117,117 +5221,3 @@ msgstr ""
 
 msgid "« Back to search results"
 msgstr ""
-
-msgid "landing_main_derscription"
-msgstr "Közérdekű adatigénylés pár kattintással: a KiMitTud abban segít, hogy könnyen és átláthatóan lehessen közérdekű adatot igényelni minden olyan állami, önkormányzati vagy más közfeladatot ellátó intézménytől, amely az állam működtetésében részt vesz vagy közpénzt költ."
-
-msgid "create_new_request"
-msgstr "Új adatigénylés létrehozása"
-
-msgid "landing_main_sentence_secund_title"
-msgstr "Az információhoz való alkotmányos jog"
-
-msgid "landing_main_sentence_secund_desciption"
-msgstr "Minden állampolgárnak joga, hogy megismerje az állami, önkormányzati vagy más közfeladatot ellátó szerv, intézmény birtokában levő információkat. <strong>A jogszabályi előírásoknak megfelelően a közintézményeknek kötelező az adatigénylésekre választ adniuk.</strong>"
-
-msgid "landing_main_sentence_secund_desciption_link"
-msgstr "Bővebben a közérdekű adatok igényléséről ..."
-
-msgid "More successful requests..."
-msgstr "Tovább az eddigi igénylésekhez ... "
-
-msgid "More requests..."
-msgstr "Több igénylés..."
-
-msgid "Supported by <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a>"
-msgstr "Elindítását az <a href=\"http://www.opensocietyfoundations.org/\">Open Society Institute</a> támogatta"
-
-msgid "Check and share"
-msgstr "Nevezd meg! - Így add tovább! CC BY-SA 2.5"
-
-msgid "Contact {{site_name}}"
-msgstr "Kapcsolatfelvétel a {{site_name}} üzemeltetőjével"
-
-msgid "help_about"
-msgstr "Mi ez?"
-
-msgid "help_requesting"
-msgstr "Adatigénylés menete"
-
-msgid "help_privacy"
-msgstr "Adatvédelmi kérdések"
-
-msgid "help_officers"
-msgstr "Adatigénylésre válaszoló munkatársaknak"
-
-msgid "help_api"
-msgstr "Az API-ról"
-
-msgid "advanced_search"
-msgstr "Keresés"
-
-msgid "help_pro"
-msgstr "Pro"
-
-msgid "discussion"
-msgstr "Témák"
-
-msgid "contact_title"
-msgstr "Kapcsolat"
-
-msgid "contact_desc"
-msgstr "Ha kérdésére itt a súgótémák között nem talált választ, vagy valamit közölni szeretne velünk a weboldallal kapcsolatosan, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>."
-
-msgid "Making requests"
-msgstr "Az adatigénylés menete"
-
-msgid "about_introduction"
-msgstr "Mi ez?"
-
-msgid "Your privacy"
-msgstr "Adatvédelmi kérdések"
-
-msgid "FOI officer questions"
-msgstr "Adatigénylésre válaszoló munkatársaknak"
-
-msgid "About our API"
-msgstr "Az API"
-
-msgid "Contact us"
-msgstr "Kapcsolatfelvétel"
-
-msgid "Contact an authority to get official information"
-msgstr "Közérdekű adatot szeretne megismerni?"
-
-msgid "<a href=\"{{url}}\">Go here</a> to make a request, in public, for information from public authorities."
-msgstr "<a href=\"{{url}}\">Kattintson ide</a>, ha valamely állami, önkormányzati vagy más közfeladatot ellátó szervétől, intézményétől szeretne nyilvánosan adatot igényelni."
-
-msgid "Asking for private information about yourself? Please read our <a href=\"{{url}}\">help page</a>."
-msgstr "Saját magáról kérne információt? Olvasson erről a <a href=\"{{url}}\">súgóban!</a>"
-
-msgid "Contact the {{site_name}} team"
-msgstr "Kapcsolatfelvétel a {{site_name}} weboldal munkatársaival"
-
-msgid "Please read the  <a href=\"{{url}}\">help page</a> first, as it may answer your question quicker."
-msgstr "Kérjük, először olvassa végig a <a href=\"{{url}}\">súgó témákat</a>, mivel előfordulhat, hogy kérdésére ott azonnal választ talál."
-
-msgid "We'd love to hear how you've found using this site. Either fill in this form."
-msgstr "Szeretnénk, ha megírná weboldalunk használatával kapcsolatos tapasztalatait. Ezenkívül, ha bármilyen kérdése van vagy tanácsra van szüksége a KiMitTud weboldal használatával kapcsolatban, csak töltse ki az alábbi űrlapot, és igyekszünk mielőbb válaszolni."
-
-msgid "We are a <strong>charity</strong> and not part of the Government."
-msgstr "Ezt a weboldalt az <a href=\"http://www.atlatszo.hu/impresszum/\">atlatszo.hu</a> üzemelteti."
-
-msgid "Message to website:"
-msgstr "Üzenet:"
-
-msgid "Include link to request:"
-msgstr "Adja hozzá az üzenethez az alábbi adatigénylés linkjét:"
-
-msgid "Include link to authority:"
-msgstr "Adja hozzá az üzenethez az alábbi adatgazda linkjét:"
-
-msgid "Send message to the charity"
-msgstr "Üzenet küldése"
-
-msgid "Currently <strong>extension</strong> state ..."
-msgstr "Jelenleg kiterjesztett állapotban van..."
