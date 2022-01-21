@@ -5139,11 +5139,6 @@ msgstr "{{search_results}}, amelyek megfelelnek a(z) '{{query}}' lekérdezésnek
 msgid "{{site_name}} blog and tweets"
 msgstr "{{site_name}} blog"
 
-msgid "{{site_name}} covers requests to {{number_of_authorities}} authority, including:"
-msgid_plural "{{site_name}} covers requests to {{number_of_authorities}} authorities, including:"
-msgstr[0] ""
-msgstr[1] ""
-
 msgid "{{site_name}} sends new requests to <strong>{{request_email}}</strong> for this authority."
 msgstr "A {{site_name}} új igénylést küld a(z) <strong>{{request_email}}</strong> részére erre a közintézményre vonatkozóan. "
 
