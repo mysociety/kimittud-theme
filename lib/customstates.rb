@@ -41,7 +41,9 @@ module InfoRequestCustomStates
     #     end
     # end
     def theme_display_status(status)
-      if status == 'extension'
+      if status == 'transferred'
+        _("Transferred.")
+      elsif status == 'extension'
         _("Extension")
       else
         raise _("unknown status ") + status
