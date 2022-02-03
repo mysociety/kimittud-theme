@@ -45,6 +45,8 @@ module InfoRequestCustomStates
         _("Transferred.")
       elsif status == 'extension'
         _("Extension")
+      elsif status == 'extended'
+        _("Extended")
       else
         raise _("unknown status ") + status
       end
