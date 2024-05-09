@@ -15,8 +15,17 @@ module InfoRequestCustomStates
   #   waiting_response_overdue
   #   waiting_response_very_overdue
   def theme_calculate_status
-    # just fall back to the core calculation
-    return self.base_calculate_status
+    if self.described_state == 'extension' 
+      return 'extension'  if Time.zone.now.strftime("%Y-%m-%d") < self.calculate_date_extension_after.strftime("%Y-%m-%d")
+      return 'waiting_response_very_overdue'
+    end
+    self.base_calculate_status
+  end
+
+  def calculate_date_extension_after
+    Holiday.due_date_from(date_initial_request_last_sent_at,
+                          EXTENSION_STATE_DAYS,
+                          AlaveteliConfiguration.working_or_calendar_days)
   end
 
   # Mixin methods for InfoRequest
@@ -32,7 +41,15 @@ module InfoRequestCustomStates
     #     end
     # end
     def theme_display_status(status)
-      raise _("unknown status ") + status
+      if status == 'transferred'
+        _("Transferred.")
+      elsif status == 'extension'
+        _("Extension")
+      elsif status == 'extended'
+        _("Extended")
+      else
+        raise _("unknown status ") + status
+      end
     end
 
     # Return the list of custom statuses added by the theme.
@@ -41,7 +58,7 @@ module InfoRequestCustomStates
     #     return ['transferred']
     # end
     def theme_extra_states
-      return []
+      return ['extension']
     end
 
   end
@@ -61,7 +78,12 @@ module RequestControllerCustomStates
   #   end
   # end
   def theme_describe_state(info_request)
-    raise "unknown calculate_status " + info_request.calculate_status
+    if info_request.calculate_status == 'extension'
+      flash[:notice] = _("Request due date extended")
+      redirect_to request_url(@info_request)
+    else
+      raise "unknown calculate_status " + info_request.calculate_status
+    end
   end
 
 end

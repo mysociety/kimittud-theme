@@ -1,0 +1,18 @@
+<% cache_if_caching_fragments("frontpage-#{@locale}", :expires_in => 5.minutes) do %>
+  <div id="frontpage_examples" class="frontpage_examples">
+    <div class="inner">
+  		<div id="frontpage_right_to_know">
+        <%= render :partial => 'frontpage_intro_sentence_secund'  %>
+      </div>
+      <div>
+        <div class="left_column">
+          <%= render :partial => "frontpage_bodies_list" %>
+        </div>
+        <div class="right_column">
+          <%= render :partial => "frontpage_requests_list" %>
+        </div>
+        <div class="clear-both"></div>
+      </div>
+    </div>
+  </div>
+<% end %>

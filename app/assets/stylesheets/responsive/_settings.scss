@@ -15,7 +15,7 @@ $color_orange: #f4a140;
 $color_blue: #4faded;
 $color_green: #62b356;
 $color_yellow: #ffd836;
-$color_red: #e04b4b;
+$color_red: #a1432c;
 $color_violet: #a94ca6;
 $color_purple: #5c377f;
 $color_white: #ffffff;
@@ -25,29 +25,52 @@ $color_mid_grey: #959287;
 $color_dark_grey: #6c6b68;
 
 $color_neutral_light: $color_sand;
-$color_neutral_dark: $color_black;
 $color_primary: $color_violet;
 $color_secondary: $color_orange;
 
-$body-bg: $color_neutral_light;
+// $body-bg: $color_neutral_light;
 
-$body-font-color: $color_neutral_dark;
+// $body-font-color: $color_neutral_dark;
 $link-color: darken($color_blue, 20%);
 $action-color: $color_green;
-$font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $form_input-bg: $color_white;
 $form-label-font-color: $color_black;
 
-$button-bg: darken($color_green, 10%);
-$button-color: $color_white;
+// $button-bg: darken($color_green, 10%);
+// $button-color: $color_white;
 
-$status-success: darken($color_green, 18%);
-$status-failure: darken($color_red, 10%);
-$status-pending: darken($color_orange, 28%);
+$status-success: #aab26e;
+$status-failure: #ff7959;
+$status-pending: #e69e5d;
 
 $notice-color: $color_green;
 $error-color: $color_red;
+$error-bg: #ebc3a9;
 $action-color: $color_orange;
 
-$banner_inner_bg: $color_primary;
-$topnav_bg: darken($color_primary, 10%);
+// $banner_inner_bg: $color_primary;
+// $topnav_bg: darken($color_primary, 10%);
+
+$body-bg: #e6e1d8;
+$button-bg: #e9654b;
+$button-color: #fff;
+$banner_inner_bg: #fff;
+$body-font-color: #847d70;
+$font-family: "Roboto Slab", Georgia, serif;
+$topnav_bg: #fff;
+
+$main_menu-link_bg: #2c5d74;
+$main_menu-active_link_text: $main_menu-link_bg;
+$main_menu-active_link_bg: $body-bg;
+$main_menu-link_text: #373532;
+$main_menu-bg: #fff;
+$banner_bg: #354c56;
+$submenu-color: #9aa6ab;
+$main_menu-search_bg: #67848c;
+$main_menu-search_text: #333;
+$heading-color: #6a6963;
+$color_neutral_dark: #545049;
+$footer_color: #dfd8ca;
+$footer_link_color: #f37122;
+$link-color: #3ec2ee;
