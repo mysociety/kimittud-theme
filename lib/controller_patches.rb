@@ -17,9 +17,9 @@ Rails.configuration.to_prepare do
   #   def help_out
   #   end
   # end
-  ApplicationHelper.class_eval do 
+  ApplicationHelper.class_eval do
     def extension_state_text
       return _('Currently <strong>extension</strong> state ...')
     end
-  end 
+  end
 end
