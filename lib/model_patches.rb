@@ -7,7 +7,25 @@
 # classes are reloaded, but initialization is not run each time.
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
+Rails.configuration.after_initialize do
+  class InfoRequest::State::CustomCalculator < InfoRequest::State::Calculator
+    def transitions(opts = {})
+      transitions = super
+      transitions[:pending].delete('internal_review')
+      transitions[:complete].delete('internal_review')
+      transitions[:other].delete('internal_review')
+      transitions
+    end
+  end
+end
+
 Rails.configuration.to_prepare do
+  InfoRequest.class_eval do
+    def state(_opts = {})
+      InfoRequest::State::CustomCalculator.new(self)
+    end
+  end
+
   # OutgoingMessage.class_eval do
   OutgoingMessage::Template::InitialRequest.class_eval do
     # Add intro paragraph to new request template

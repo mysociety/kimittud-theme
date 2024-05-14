@@ -25,10 +25,6 @@
                   <%= link_to _('Update the status of this request'), request_path(info_request, update_status: 1) %>
                 </li>
               <% end %>
-
-              <li>
-                <%= link_to _('Request an internal review'), new_request_followup_path(info_request.url_title, internal_review: '1') %>
-              </li>
             </ul>
           </li>
         <% end %>

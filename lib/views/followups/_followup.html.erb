@@ -45,17 +45,6 @@
             url: help_contact_path) %>
     </p>
   <% else %>
-    <% if @internal_review %>
-      <p>
-        <%= _('If you are dissatisfied by the response you got from the ' \
-              'public authority, you have the right to complain ' \
-              '(<a href="{{url}}">details</a>).',
-              url: help_unhappy_path(
-                     anchor: 'internal_review',
-                     url_title: @info_request.url_title)) %>
-      </p>
-    <% end %>
-
     <p>
     <%= _('Please <strong>only</strong> write messages directly relating ' \
           'to your request {{request_link}}. If you would like to ask for ' \
@@ -133,65 +122,9 @@
         <%= o.text_area :body, rows: 15, cols: 55 %>
       </p>
 
-      <% if @internal_review %>
-        <%= hidden_field_tag 'outgoing_message[what_doing]',
-                             'internal_review' %>
-      <% else %>
-        <h3><%= _('What are you doing?') %></h3>
-
-        <% if !@outgoing_message.errors[:what_doing_dummy].nil? %>
-          <div class="fieldWithErrors">
-        <% else %>
-          <div>
-        <% end %>
-          <!--
-            <div>
-            <%= radio_button 'outgoing_message',
-                             'what_doing',
-                             'new_information',
-                             id: 'new_information' %>
-            <label for="new_information">
-              <%= _('I am asking for <strong>new information</strong>') %>
-            </label>
-            </div>
-          -->
-          <div>
-            <%= radio_button 'outgoing_message',
-                             'what_doing',
-                             'internal_review',
-                             id: 'internal_review' %>
-            <label for="internal_review">
-              <%= _('I am requesting an <strong>internal review</strong>') %>
-              <%= link_to _("what's that?"), '/help/unhappy' %>
-            </label>
-          </div>
-
-          <div>
-            <%= radio_button 'outgoing_message',
-                             'what_doing',
-                             'normal_sort',
-                             id: 'sort_normal' %>
-            <label for="sort_normal">
-              <%= _('<strong>Anything else</strong>, such as clarifying, ' \
-                    'prompting, thanking') %>
-            </label>
-          </div>
-        </div>
-      <% end %>
-
-      <% if @internal_review %>
-        <p>
-          <%= _('Edit and add <strong>more details</strong> to the message ' \
-                'above, explaining why you are dissatisfied with their ' \
-                'response.') %>
-        </p>
-      <% end %>
-
       <p>
+        <%= hidden_field_tag 'outgoing_message[what_doing]', 'normal_sort' %>
         <%= hidden_field_tag 'submitted_followup', 1 %>
-        <% if @internal_review %>
-          <%= hidden_field_tag(:internal_review, 1 ) %>
-        <% end %>
         <%= submit_tag _('Preview your message') %>
       </p>
     <% end %>

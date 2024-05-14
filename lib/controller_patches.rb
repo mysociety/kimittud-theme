@@ -22,4 +22,10 @@ Rails.configuration.to_prepare do
       return _('Currently <strong>extension</strong> state ...')
     end
   end
+
+  FollowupsController.class_eval do
+    def set_internal_review
+      @internal_review = false
+    end
+  end
 end
