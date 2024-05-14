@@ -1208,9 +1208,10 @@ a.link_button_green_large {
         background:$heading-color;
         padding:4px;
         display:inline-block;
-        padding:5px 10px;
+        padding:12px;
         &#logo{
           background:transparent none;
+          padding:0;
         }
       }
     }
