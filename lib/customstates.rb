@@ -58,7 +58,7 @@ module InfoRequestCustomStates
     #     return ['transferred']
     # end
     def theme_extra_states
-      return ['extension']
+      return ['transferred', 'extension', 'extended']
     end
 
   end
