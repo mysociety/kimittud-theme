@@ -5,9 +5,6 @@
           <li class="logo"><%= link_to image_tag('footer-logo.svg', width: 160, height: 50), frontpage_path, :id => 'logo' %></li>
           <li><%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_path %></li>
           <li><%= link_to "KiMitTud a facebookon", "https://www.facebook.com/KiMitTud" %></li>
-          <% unless AlaveteliConfiguration::twitter_username.blank? %>
-            <li><a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>"><%= _("Follow us on twitter") %></a></li>
-          <% end %>
       </ul>
     </div>
     <div class="">
