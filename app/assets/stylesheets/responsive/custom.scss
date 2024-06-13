@@ -769,7 +769,7 @@ a.link_to_this {
 
 #header_right {
   .link_button_green {
-    @include button-secondary;
+    @include button-primary;
   }
 }
 
@@ -870,7 +870,7 @@ dt {
   .action-bar__follow-button {
     .track_action,
     .link_button_green {
-      @include button-secondary();
+      @include button-primary();
       @include follow-button();
     }
   }
@@ -1469,4 +1469,13 @@ textarea[rows] {
   background-color: rgba(17, 17, 17, 50%);
   padding: 1rem;
   color: #dedede;
+}
+
+input#reedit_button {
+  color: $color_white;
+  text-decoration: none;
+}
+
+input#reedit_button:hover, input#reedit_button:active, input#reedit_button:focus {
+  color: $color_white;
 }
