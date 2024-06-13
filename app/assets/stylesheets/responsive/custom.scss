@@ -618,7 +618,6 @@ p.locale-list-trigger {
 
   .action-bar__follow-button {
     .track__action {
-      @include button-primary();
       @include follow-button();
     }
   }
@@ -870,7 +869,6 @@ dt {
   .action-bar__follow-button {
     .track_action,
     .link_button_green {
-      @include button-primary();
       @include follow-button();
     }
   }
@@ -1063,7 +1061,7 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
   /* This style is expressed for all borders to avoid triggering an IE9 border rendering bug */
   border-style: solid; border-color: darken($button-bg, 15%); border-width: 0 0 4px 0;
   border-radius: 0;
-  padding: 3px 7px;
+  padding: 5px 7px;
   line-height: normal;
   font-size: 1.1rem;
   /* Same height as form elements */
