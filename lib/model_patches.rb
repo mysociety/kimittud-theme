@@ -35,20 +35,30 @@ Rails.configuration.to_prepare do
     end
 
     def template_string(replacements)
-      law_msg = "Az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (a továbbiakban: Infotv.) 28. § (1) bekezdése alapján a következő adatigénylést terjesztem elő.\n\n" +
-        "Kérem, szíveskedjen elektronikus másolatban megküldeni részemre \n\n(__ IGÉNYELT ADATOK MEGJELÖLÉSE __)\n\n" +
-        "Az Infotv. 30. § (2) bekezdése szerint kérem, hogy a másolatokat és az egyéb igényelt adatokat elektronikus úton szíveskedjen részemre a feladó e-mail címére megküldeni.\n" +
-        "Ha az igényelt adatokat bármely okból nem lehet e-mailben megküldeni, akkor kérem, hogy azokat a kimittud.atlatszo.hu weboldalon töltse fel.\n\n" +
-        "Az Infotv. 29. § (3) és (5) bekezdése alapján adatigénylésem teljesítéséért költségtérítés kizárólag akkor állapítható meg, ha az adatigénylés teljesítése a közfeladatot ellátó szerv alaptevékenységének ellátásához szükséges munkaerőforrás aránytalan mértékű igénybevételével jár. Ilyen esetben az adatkezelő jogosult az adatigénylés teljesítésével összefüggő munkaerő-ráfordítás költségét költségtérítésként meghatározni. Kérem, hogy előzetesen elektronikus úton tájékoztasson arról, amennyiben a kért iratmásolatokra tekintettel költségtérítést állapítana meg. Ebben az esetben kérem, hogy a tájékoztatásban mellékeljen dokumentumlistát, dokumentumonként tüntesse fel az oldalszámot, az adatigénylés teljesítésével kapcsolatos munkaerő-ráfordítás mértékét és annak óradíját.\n\n" +
-        "Kérem, hogy abban az esetben, ha az igényelt adatoknak csak egy részét tekinti megismerhetőnek, az Infotv. 30. § (1) bekezdése alapján azokat az adatigénylés részbeni megtagadásával együtt küldje meg számomra.\n\n" +
-        "Felhívom szíves figyelmét, hogy a Nemzeti Adatvédelmi és Információszabadság Hatóság NAIH/2015/4710/2/V. számú állásfoglalásából következően a jelen adatigénylés az Infotv. 29. § (1b) bekezdése alapján nem tagadható meg, mivel tartalmazza az adatigénylő nevét és elérhetőségét. Ezen túlmenő adatok megadását az adatkezelő NAIH állásfoglalás szerint nem kérheti, továbbá nem jogosult a személyazonosság ellenőrzésére sem.\n\n" +
-        "Segítő együttműködését előre is köszönöm.\n\n" +
-        "Kelt: " + I18n.localize(Time.now.to_date, :format => :long)
+      law_msg = <<~TXT.strip
+        Az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (a továbbiakban: Infotv.) 28. § (1) bekezdése alapján a következő adatigénylést terjesztem elő.
+
+        Kérem, szíveskedjen elektronikus másolatban megküldeni részemre
+
+        (__ IGÉNYELT ADATOK MEGJELÖLÉSE __)
+
+        Az Infotv. 30. § (2) bekezdése szerint kérem, hogy a másolatokat és az egyéb igényelt adatokat elektronikus úton szíveskedjen részemre a feladó e-mail címére megküldeni. Ha az igényelt adatokat bármely okból nem lehet e-mailben megküldeni, akkor kérem, hogy azokat a kimittud.atlatszo.hu weboldalon töltse fel.
+
+        Mivel adatigénylésemben elektronikus másolatban és elektronikus úton kérem az adatok kiadását, ezért az adatigénylés teljesítéséért az Infotv. 29. § (3)-(5) bekezdései alapján költségtérítés megállapítására nincs mód. Ha az adatok kiadása a kért módon lehetetlen volna, és iratmásolatok adathordozókra másolásához és kézbesítéséhez kapcsolódóan a hivatkozott törvényi rendelkezések alkalmazásával mégis költségtérítést állapítanának meg, úgy kérem, hogy előzetesen elektronikus úton tájékoztasson erről. Ebben az esetben azt is kérem, hogy a tájékoztatásban tételesen jelölje meg a költségtérítés számítása során figyelembe vett költségtényezőket.
+
+        Kérem, hogy abban az esetben, ha az igényelt adatoknak csak egy részét tekinti megismerhetőnek, az Infotv. 30. § (1) bekezdése alapján azokat az adatigénylés részbeni megtagadásával együtt küldje meg számomra.
+
+        Felhívom szíves figyelmét, hogy a Nemzeti Adatvédelmi és Információszabadság Hatóság NAIH/2015/4710/2/V. számú állásfoglalásából következően a jelen adatigénylés az Infotv. 29. § (1b) bekezdése alapján nem tagadható meg, mivel tartalmazza az adatigénylő nevét és elérhetőségét. Ezen túlmenő adatok megadását az adatkezelő NAIH állásfoglalás szerint nem kérheti, továbbá nem jogosult a személyazonosság ellenőrzésére sem.
+
+        Segítő együttműködését előre is köszönöm.
+
+        Kelt: #{I18n.localize(Time.now.to_date, :format => :long)}
+      TXT
       msg = salutation(replacements)
       msg += letter(replacements)
       msg += "\n\n"
       msg += law_msg
-      msg += "\n\n\n\n"
+      msg += "\n\n"
       msg += signoff(replacements)
       msg += "\n\n"
     end
